@@ -70,7 +70,7 @@ function addCredentialWarnings() {
         // Warn about potential real credentials (basic check)
         const suspiciousPatterns = [
             /[a-zA-Z0-9_]{20,}/g,  // Long strings that might be passwords
-            /EXAMPLE_USERNAME/g,   // Known test username pattern
+            /YOUR_CVR_USERNAME/g,  // Test credential pattern check
         ];
         
         let hasSuspiciousContent = false;
