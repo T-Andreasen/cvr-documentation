@@ -95,7 +95,7 @@ jobs:
           mkdocs build --clean --strict
       
       - name: Upload build artifact (for review)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: documentation-build
           path: ./site/
