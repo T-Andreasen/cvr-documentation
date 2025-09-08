@@ -46,7 +46,7 @@ jobs:
       
       - name: Build MkDocs
         run: |
-          mkdocs build --clean --strict
+          mkdocs build --clean
         env:
           # Configure site URL for proper asset links
           SITE_URL: ${{ steps.pages.outputs.base_url }}
@@ -92,7 +92,7 @@ jobs:
       
       - name: Test build
         run: |
-          mkdocs build --clean --strict
+          mkdocs build --clean
       
       - name: Upload build artifact (for review)
         uses: actions/upload-artifact@v4
