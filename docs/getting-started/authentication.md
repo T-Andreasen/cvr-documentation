@@ -17,11 +17,11 @@ The Danish CVR Registry API requires HTTP Basic Authentication for all requests.
 
 2. **Include in your request**:
    - Your organization name
-   - Intended use case for the data
-   - Expected query volume
-   - Technical contact information
+   - Your organization ID (leave out if working as private)
+   - Contact information
+   - Inform if you require access to beneficial owners
 
-3. **Wait for approval** - Processing may take several business days
+3. **Wait for approval** - Processing may take up to 3 weeks.
 
 ## Setting Up Authentication
 
@@ -150,7 +150,6 @@ A successful authentication returns company data:
 **Common Causes**:
 - Incorrect username or password
 - Expired credentials
-- Account not yet activated
 
 **Solutions**:
 - Verify credentials with CVR support team
